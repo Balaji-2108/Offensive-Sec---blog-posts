@@ -13,6 +13,8 @@ My learning journey includes hands-on practice with **PG Practice, Hack The Box*
 
 I enjoy documenting my learning through detailed **technical write-ups** to reinforce concepts and help others in the community.
 
+My blog post profile page link - https://medium.com/@balajibala2118/press-pg-practice-security-lessons-ae64281d0c15
+
 ---
 
 ## 🧪 Skills & Tools
