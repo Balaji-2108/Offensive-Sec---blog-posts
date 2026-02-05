@@ -40,6 +40,7 @@ No real-world systems were harmed or tested.
 
 ## 📫 Connect With Me
 - 💼 LinkedIn: https://www.linkedin.com/in/balaji-murugesan-42447718a/
+- 📧 Email: balajibala2118@gmail.com
 
 ---
 
