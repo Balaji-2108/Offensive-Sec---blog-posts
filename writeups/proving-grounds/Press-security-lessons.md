@@ -71,4 +71,4 @@ Practice identifying and exploiting common web application misconfigurations and
 ## Disclaimer
 This writeup is based on a controlled lab environment and focuses on high-level security learning outcomes. No exploit code, credentials, or step-by-step attack instructions are included.
 
-- 🔗 Detailed explanation is in this blog - [Press PG Practice — Security Lessons](https://medium.com/@balajibala2118/press-pg-practice-security-lessons-ae64281d0c15)
+- 🔗 Detailed explanation can be found in this blog - [Press PG Practice — Security Lessons](https://medium.com/@balajibala2118/press-pg-practice-security-lessons-ae64281d0c15)
