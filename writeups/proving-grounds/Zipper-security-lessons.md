@@ -61,3 +61,5 @@ Practice identifying and exploiting common web application misconfigurations and
 
 ## Disclaimer
 This writeup is based on a controlled lab environment and focuses on high-level security learning outcomes. No exploit code, credentials, or step-by-step attack instructions are included.
+
+- 🔗 Detailed explanation can be found in this blog - [PG practice Zipper — Security Lessons](https://medium.com/@balajibala2118/pg-practice-zipper-security-lessons-d6a7c7eedd63)
