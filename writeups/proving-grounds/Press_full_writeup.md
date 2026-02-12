@@ -25,7 +25,7 @@ Upon crawling over the website I couldn’t find any attack vector or useful inf
 
 I moved to port 8089, which hosts a blogging service called Flatpress. It is mainly relied on php.
 
-![Flatpress home page](/writeups/Screenshots/flatpress(8089).png)
+![Flatpress home page](/writeups/Screenshots/Flatpress(8089).png)
 
 The version of the Flatpress is mentioned in the nmap results.
 
