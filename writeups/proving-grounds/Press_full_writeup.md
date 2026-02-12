@@ -48,8 +48,8 @@ Username: admin
 Password: password
 ```
 
-![Flatpress login](FP(login).png)
-![Admin Page](FP(adminpage).png)
+![Flatpress login](/writeups/Screenshots/FP(login).png)
+![Admin Page](/writeups/Screenshots/FP(adminpage).png)
 
 It worked just like that.
 
@@ -57,43 +57,47 @@ It worked just like that.
 
 Once logged inside as the Administrator, I searched for the Uploads section as mentioned in CVE-2022–40048 and found it.*
 
-![Upload page](FP(Uploadpage).png)
+![Upload page](/writeups/Screenshots/FP(Uploadpage).png)
 
 As per the CVE,
 “The upload function is designed for uploading images and Download them. But the download functionality is not sandboxed and doesn't have proper sanitization control over the files uploaded, which can be bypassed for uploading dangerous files”.
 
 As the Flat press is php based, I have uploaded a basic command shell php file.
 
-![Backdoor](FP(backdoor).png)
+![Backdoor](/writeups/Screenshots/FP(backdoor).png)
 
 Started a netcat listener in my kali machine and executed a reverse shell command in the web page.
 
-![NC listner](FP(nclistner).png)
+![NC listner](/writeups/Screenshots/FP(nclistner).png)
 
 Got the shell access to the machine and found the local.txt flag.
 
-Authentication was possible due to weak default credentials.
-After obtaining administrative access, a known file upload vulnerability was abused to gain remote command execution.
+*Authentication was possible due to weak default credentials.
+After obtaining administrative access, a known file upload vulnerability was abused to gain remote command execution.*
 
 # Privilege Escalation:
 
 The first thing I do in a Privesc is that checking the users sudo privileges.
 
-![sudo l](linux(Privesc1).png)
+![sudo l](/writeups/Screenshots/linux(Privesc1).png)
  
 This revealed a critical misconfiguration that the user doesn’t need a password for executing the apt-get command with root privilege.
 A quick search in GTFO bins revealed that this can be exploited to get a root shell.
 
- 
+![GTFO](/writeups/Screenshots/Privesc(gtfobin).png)
+
 I used the 3rd command and got the root access of the machine.
 
- 
-Privilege escalation was achieved due to a misconfigured sudo rule allowing execution of a package management binary without authentication.
-Summary
+![Pwned](/writeups/Screenshots/FP(pwned).png)
+
+*Privilege escalation was achieved due to a misconfigured sudo rule allowing execution of a package management binary without authentication.*
+
+## Summary
 1.	Found that there is Flatpress service running in port 8089.
 2.	Easily accessed due to weak password and exploited using file upload & RCE vulnerabilities.
 3.	Got the Root shell by exploiting the NOPASSWD apt-get binary.
-Mitigation:
+
+## Mitigation:
 1.	Strong password must be configured for Flatpress Admin account.
 2.	Update the Flatpress service to latest version.
 3.	Revert the Password less sudo privilege for apt-get binary to prevent attacker from getting root access.
