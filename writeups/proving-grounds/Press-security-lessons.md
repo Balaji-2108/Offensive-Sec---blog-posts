@@ -71,4 +71,4 @@ Practice identifying and exploiting common web application misconfigurations and
 ## Disclaimer
 This writeup is based on a controlled lab environment and focuses on high-level security learning outcomes. No exploit code, credentials, or step-by-step attack instructions are included.
 
-- 🔗 Detailed Demonstration - [Press PG Practice — Full writeup](/writeups/proving-grounds/Press-security-lessons.md)
+- 🔗 Detailed Demonstration - [Press PG Practice — Full writeup](/writeups/proving-grounds/Press_full_writeup.md)
