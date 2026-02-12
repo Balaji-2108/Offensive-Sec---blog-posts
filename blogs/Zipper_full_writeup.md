@@ -15,7 +15,7 @@ The scan revealed two open ports i.e, port 22 for ssh and port 80 for web servic
 ```
 Port 80 hosts a web application called Zipper which converts any file into a compressed zip format.
 
-![main page](writeups/Screenshots/zipper/Zipper(main).png)
+![main page](/writeups/Screenshots/zipper/Zipper(main).png)
  
 I tried uploading a php reverse file simple-backdoor.php and the website compressed it and returned a link to download the compressed zip file. This means the uploaded file is stored as zip file in the web page.
 
@@ -23,7 +23,7 @@ Next, I clicked on the home button and it redirected to the same page but with a
 
 As the index.php gets a parameter called “file”, I tried php://filter wrappers in that parameter to check if we can handle the files in the web directory. Used the wrapper to extract index.php file in base64 format.
 
-![exploit](writeups/Screenshots/zipper/exploiting.png)
+![exploit](/writeups/Screenshots/zipper/exploiting.png)
  
 Webpage displaying index.php content in base64 format.
 
@@ -33,7 +33,7 @@ _/index.php?file=zip://uploads/upload_1766650521.zip%23simple-backdoor_
 
 Started a nc listener in my kali machine and accessed the file which gave me a shell access to the target.
 
-![nclistner](writeups/Screenshots/zipper/nclistner.png)
+![nclistner](/writeups/Screenshots/zipper/nclistner.png)
  
 The uploaded PHP reverse shell was executed when included via the zip:// wrapper, resulting in remote code execution.
  
@@ -41,7 +41,7 @@ The uploaded PHP reverse shell was executed when included via the zip:// wrapper
 
 Enumerating inside the machine, I found a cron job which zips zip file in /var/www/html/uploads in to one and stores the logs of the operation as backup.log. The Operation is executed as root and according to the file the password for this operation is stored in /root/secret.
 
-![Privesc](writeups/Screenshots/zipper/Privesc.png)
+![Privesc](/writeups/Screenshots/zipper/Privesc.png)
  
 Upon checking the uploads directory the enox.zip in symlinked to /root/secret.
 
