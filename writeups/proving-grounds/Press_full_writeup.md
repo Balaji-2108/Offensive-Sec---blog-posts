@@ -48,8 +48,8 @@ Username: admin
 Password: password
 ```
 
-!(Flatpress login)[FP(login).png]
-!(Admin Page)[FP(adminpage).png]
+![Flatpress login](FP(login).png)
+![Admin Page](FP(adminpage).png)
 
 It worked just like that.
 
@@ -57,18 +57,18 @@ It worked just like that.
 
 Once logged inside as the Administrator, I searched for the Uploads section as mentioned in CVE-2022–40048 and found it.*
 
-!(Upload page)[FP(Uploadpage).png]
+![Upload page](FP(Uploadpage).png)
 
 As per the CVE,
 “The upload function is designed for uploading images and Download them. But the download functionality is not sandboxed and doesn't have proper sanitization control over the files uploaded, which can be bypassed for uploading dangerous files”.
 
 As the Flat press is php based, I have uploaded a basic command shell php file.
 
-!(Backdoor)[FP(backdoor).png]
+![Backdoor](FP(backdoor).png)
 
 Started a netcat listener in my kali machine and executed a reverse shell command in the web page.
 
-!(NC listner)[FP(nclistner).png]
+![NC listner](FP(nclistner).png)
 
 Got the shell access to the machine and found the local.txt flag.
 
@@ -79,7 +79,7 @@ After obtaining administrative access, a known file upload vulnerability was abu
 
 The first thing I do in a Privesc is that checking the users sudo privileges.
 
-!(sudo l)[linux(Privesc1).png]
+![sudo l](linux(Privesc1).png)
  
 This revealed a critical misconfiguration that the user doesn’t need a password for executing the apt-get command with root privilege.
 A quick search in GTFO bins revealed that this can be exploited to get a root shell.
