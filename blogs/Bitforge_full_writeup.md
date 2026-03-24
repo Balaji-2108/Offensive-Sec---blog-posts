@@ -39,6 +39,7 @@ Note: The .git folder is the core of a Git repository, containing all the metada
 I mirrored the .git directory locally and analyzed it using Git commands:
 
 git log — shows the project commit history
+
 git show <commit> — Displays the commit message.
 
 ![wgetgit](/writeups/Screenshots/bitforge/wgetgit.png)
