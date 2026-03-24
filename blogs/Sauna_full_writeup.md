@@ -1,4 +1,3 @@
-        ![HTB logo](/writeups/Screenshots/HTBlogo.png)
 # Sauna HTB — Security lessons
 ## Introduction:
 
