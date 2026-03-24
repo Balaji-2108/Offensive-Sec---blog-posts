@@ -54,7 +54,7 @@ Using the discovered credentials, I connected to the MySQL service on port 3306.
 
 ![mysql](/writeups/Screenshots/bitforge/mysql.png)
 
-Database Enumeration:
+**Database Enumeration:**
 
 The mysql service contains a password hash for the Soplanning admin in the bitforge_customer_db database.
 
