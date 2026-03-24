@@ -42,7 +42,7 @@ Since no credentials were available, I attempted AS-REP roasting using the valid
 Note: AS-REP Roasting is a credential-dumping attack technique to extract and crack password hashes from user accounts in a Microsoft Active Directory (AD) environment that have a specific misconfiguration: Kerberos pre-authentication is disabled.
 ```
 
-![Secretsdump](/writeups/Screenshots/Sauna/secretsdump.png)
+![AS-REP](/writeups/Screenshots/Sauna/AS-REP.png)
 
 A Kerberos hash was successfully retrieved and cracked using Hashcat, revealing the password for **fsmith**.
 
@@ -52,7 +52,7 @@ A Kerberos hash was successfully retrieved and cracked using Hashcat, revealing 
 
 Running **winPEAS** revealed that the user SVC_LOANMGR has autologon enabled and the autologon credentials.
 
-![winpeas](/writeups/Screenshots/Sauna/winpeas.png)
+![winpeas](/writeups/Screenshots/Sauna/winPEAS.png)
 
 Now, we have credentials for users fsmith and svc_loamgr. With these I tried enumerating RPC and smbclient again, but no interesting things found in them.
 
