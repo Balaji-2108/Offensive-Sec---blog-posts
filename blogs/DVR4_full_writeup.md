@@ -16,7 +16,7 @@ Nmap scan results:
 ```
 Initial enumeration revealed multiple exposed network services, including file sharing services and a web-based surveillance application. The web service became the primary attack surface due to its exposed functionality and public-facing nature.
 
-![webpage](/writeups/Screenshots/DRV4/Argusweb.png)
+![webpage](/writeups/Screenshots/DVR4/Argusweb.png)
 
 The Argus website has two users in its user page.
 ```
