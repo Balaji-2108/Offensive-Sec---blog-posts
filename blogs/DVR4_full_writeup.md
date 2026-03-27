@@ -28,7 +28,7 @@ Upon Public vulnerability research, I discovered that the Argus Surveillance DVR
 
 [Argus Surveillance DVR 4.0.0.0 - Directory Traversal](https://medium.com/r/?url=https%3A%2F%2Fwww.exploit-db.com%2Fexploits%2F45296)
 
-![exploit](/writeups/Screenshots/DRV4/exploitpage.png)
+![exploit](/writeups/Screenshots/DVR4/exploitpage.png)
 
 ## Initial Foothold
 
