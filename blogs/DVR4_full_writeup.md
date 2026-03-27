@@ -36,11 +36,11 @@ Reviewing all the informations, we can try obtaining the ssh from the Users foun
 
 The identified file access vulnerability allowed retrieval of sensitive authentication material associated with a low-privileged user account. This information was sufficient to gain an initial foothold on the system.
 
-![curl](/writeups/Screenshots/DRV4/curl.png)
+![curl](/writeups/Screenshots/DVR4/curl.png)
 
 Using the private key I connected to the device via ssh connection.
 
-![ssh](/writeups/Screenshots/DRV4/ssh.png)
+![ssh](/writeups/Screenshots/DVR4/ssh.png)
 
 _The Argus surveillance service has a Directory traversal Vulnerability which is then used to retrieve the SSH Private key of the user viewer, gaining a ssh shell to the machine._
 
@@ -50,16 +50,16 @@ Post-exploitation enumeration identified that the Argus Surveillance configurati
 
 [Argus Surveillance DVR 4.0 - Weak Password Encryption](https://medium.com/r/?url=https%3A%2F%2Fwww.exploit-db.com%2Fexploits%2F50130)
 
-![DVR1](/writeups/Screenshots/DRV4/DVRparams.png)
-![DVR1](/writeups/Screenshots/DRV4/DVRparams1.png)
+![DVR1](/writeups/Screenshots/DVR4/DVRparams.png)
+![DVR1](/writeups/Screenshots/DVR4/DVRparams1.png)
 
 Using the exploit, I decrypted the Password for the user "Administrator". To try this password, I first created a .exe file and uploaded it to the machine. Then I ran the exe file as the user administrator providing me the admin shell access.
 
-![msfvenom](/writeups/Screenshots/DRV4/msfvenom.png)
+![msfvenom](/writeups/Screenshots/DVR4/msfvenom.png)
 
-![met](/writeups/Screenshots/DRV4/met.png)
+![met](/writeups/Screenshots/DVR4/met.png)
 
-![nc](/writeups/Screenshots/DRV4/nc.png)
+![nc](/writeups/Screenshots/DVR4/nc.png)
 
 ## Summary
 
