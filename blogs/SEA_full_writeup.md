@@ -72,7 +72,7 @@ Once the replacement occurs:
 ![psbin](/writeups/Screenshots/SEA/psbin.png)
 ![root](/writeups/Screenshots/SEA/root.png)
 
-Summary:
+## Summary:
 
 1. Anonymous FTP access exposed log files containing sensitive information
 2. The log file revealed a hidden web resource
@@ -80,7 +80,7 @@ Summary:
 4. A misconfigured cron job allowed file replacement in system directories
 5. Root access was achieved by abusing a sudo-allowed binary
 
-Mitigation:
+## Mitigation:
 
 1. Disable anonymous FTP access unless absolutely necessary
 2. Restrict access to log files and sensitive system information
