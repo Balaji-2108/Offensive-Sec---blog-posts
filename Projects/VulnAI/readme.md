@@ -1,6 +1,6 @@
 # Introduction
 
-This document, demontrate how to buiild a basic vulnerable AI application to test prompt injection vulnerability
+This document demonstrate how to build a basic vulnerable AI application to test prompt injection vulnerability
 
 Using Python Flask, this application simulates a vulnerable AI chatbot to demonstrate prompt injection and data leakage risks.
 
