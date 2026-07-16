@@ -32,9 +32,6 @@ Nmap-Automator/
 ├── report.py           # HTML report generator
 ├── output/
 │   ├── report.html
-│   ├── scan.xml
-│   ├── scan.nmap
-│   └── scan.gnmap
 │
 ├── requirements.txt
 └── README.md
