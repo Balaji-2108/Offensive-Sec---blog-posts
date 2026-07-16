@@ -1,0 +1,111 @@
+
+    <html>
+
+    <head>
+
+    <title>Nmap Report</title>
+
+    <style>
+
+    body {
+        font-family: Arial;
+        margin:40px;
+        background:#f8f8f8;
+    }
+
+    table {
+        border-collapse:collapse;
+        width:100%;
+    }
+
+    th,td {
+        border:1px solid #ddd;
+        padding:10px;
+    }
+
+    th {
+        background:#222;
+        color:white;
+    }
+
+    h1 {
+        color:#222;
+    }
+
+    </style>
+
+    </head>
+
+    <body>
+
+    <h1>Nmap Automation Report</h1>
+
+    <p>Generated: 2026-07-16 16:22:01.004103</p>
+    <h2>Host: 127.0.0.1</h2><p>Status: up</p>
+        <table>
+
+        <tr>
+
+        <th>Port</th>
+        <th>State</th>
+        <th>Service</th>
+        <th>Version</th>
+
+        </tr>
+        
+
+                <tr>
+
+                <td>80</td>
+
+                <td>open</td>
+
+                <td>http</td>
+
+                <td>SimpleHTTPServer 0.6</td>
+
+                </tr>
+
+                </table><h2>Interesting Findings</h2>
+
+    <table>
+
+    <tr>
+
+    <th>Host</th>
+
+    <th>Port</th>
+
+    <th>Service</th>
+
+    <th>Risk</th>
+
+    <th>Recommended Tools</th>
+
+    </tr>
+
+    
+
+        <tr>
+
+        <td>127.0.0.1</td>
+
+        <td>80</td>
+
+        <td>HTTP</td>
+
+        <td>Web Application</td>
+
+        <td>whatweb, ffuf, nikto</td>
+
+        </tr>
+
+        
+
+    </table>
+
+    </body>
+
+    </html>
+
+    
