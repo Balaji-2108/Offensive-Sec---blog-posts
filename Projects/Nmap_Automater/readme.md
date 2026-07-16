@@ -4,6 +4,8 @@ An automated **Python-based Nmap reconnaissance tool** that performs network sca
 
 This project was built to automate the initial reconnaissance phase of a penetration test and reduce the manual effort involved in analyzing Nmap scan results.
 
+![Banner](/writeups/Screenshots/Nmap_Automater/Screenshot1.png)
+
 ---
 
 ## ✨ Features
@@ -145,6 +147,14 @@ The tool automatically detects commonly targeted services such as:
 | 1433 | MSSQL |
 
 ---
+
+## Sample Output:
+
+![Output](/writeups/Screenshots/Nmap_Automater/Screenshot2.png)
+
+Sample HTML report file generated:
+
+![Output](/writeups/Screenshots/Nmap_Automater/Screenshot3.png)
 
 ### Planned Features
 
