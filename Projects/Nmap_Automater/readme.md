@@ -33,7 +33,6 @@ Nmap-Automator/
 ├── output/
 │   ├── report.html
 │
-├── requirements.txt
 └── README.md
 ```
 
