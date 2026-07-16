@@ -46,7 +46,7 @@ Nmap-Automator/
 ### Install Python Dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install -r python-nmap
 ```
 
 Install Nmap
