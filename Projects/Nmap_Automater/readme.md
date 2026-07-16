@@ -182,5 +182,5 @@ Contributions, feature requests, and improvements are welcome. Feel free to fork
 
 - OSCP (OffSec Certified Professional)
 - Cybersecurity | Penetration Testing | AI Security
-- LinkedIn: https://www.linkedin.com/in/<your-profile>
-- GitHub: https://github.com/Balaji-2108
+- LinkedIn: https://www.linkedin.com/in/balaji-murugesan-42447718a
+- Blogs: https://substack.com/@balaji217
