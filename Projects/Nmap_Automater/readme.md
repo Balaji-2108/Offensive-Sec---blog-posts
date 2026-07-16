@@ -104,10 +104,11 @@ python3 scanner.py -t 192.168.1.10 -o reports
 | Option | Description |
 |---------|-------------|
 | `-t` | Target IP, Hostname or CIDR |
+| `--port` | Scan a specific Port |
 | `--quick` | Quick service scan |
 | `--full` | Scan all TCP ports |
 | `--ping` | Host discovery only |
-| `-o` | Output directory |
+| `--file` | Output filename |
 | `-h` | Display help |
 
 ---
@@ -136,6 +137,7 @@ The tool automatically detects commonly targeted services such as:
 | 22 | SSH |
 | 80 | HTTP |
 | 139 | NetBIOS |
+| 443 | HTTPS |
 | 445 | SMB |
 | 3389 | RDP |
 | 5985 | WinRM |
