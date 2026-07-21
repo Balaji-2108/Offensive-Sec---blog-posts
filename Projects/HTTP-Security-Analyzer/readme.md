@@ -156,16 +156,6 @@ SESSIONID
 
 ------------------------------------------------
 
-Overall Security Score
-
-66/100
-
-Grade
-
-D
-
-------------------------------------------------
-
 HTML Report Generated
 
 output/report.html
