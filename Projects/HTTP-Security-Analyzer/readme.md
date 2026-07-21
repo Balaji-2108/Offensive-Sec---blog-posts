@@ -180,7 +180,7 @@ The tool automatically generates a detailed HTML report containing:
 
 ## 💡 Why This Project?
 
-During web application penetration tests, checking HTTP security headers and cookie configurations is one of the first steps in identifying common security misconfigurations. While browsers and online tools can perform these checks, this project automates the process, provides a clear security score, and generates a professional report that can be used during security assessments.
+During web application penetration tests, checking HTTP security headers and cookie configurations is one of the first steps in identifying common security misconfigurations. While browsers and online tools can perform these checks, this project automates the process and generates a professional report that can be used during security assessments.
 
 This project demonstrates:
 
@@ -213,11 +213,11 @@ Planned enhancements include:
 
 ### CLI Output
 
-> *(Add a screenshot here after running the tool.)*
+![Analyzer](/writeups/Screenshots/Http-Analyzer/Analyzer.png)
 
 ### HTML Report
 
-> *(Add a screenshot of the generated report.)*
+![Reportr](/writeups/Screenshots/Http-Analyzer/report.png)
 
 ---
 
