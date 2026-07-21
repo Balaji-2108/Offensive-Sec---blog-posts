@@ -25,9 +25,9 @@ My blog post profile page link - [Substack - @balajibala2118](https://substack.c
 
 
 ## 🚀 Current Focus
-- OSCP preparation
 - Exploit understanding & manual enumeration
 - Writing clear, beginner-friendly pentesting documentation
+- AI/LM Pentesting
 
 ---
 
