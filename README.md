@@ -2,7 +2,8 @@
 # 👋 Hi, I'm Balaji
 
 🔐 Cybersecurity enthusiast actively transitioning into **penetration testing**  
-🎯 Offensive Security Certified Professional **(OSCP)**
+🎯 Offensive Security Certified Professional **OSCP**
+
 🛠️ Background in **incident analysis, SIEM, and security operations**
 
 ---
