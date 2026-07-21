@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>HTTP Security Report</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f5f5f5;
+margin:40px;
+}
+
+.container{
+
+background:white;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:0 0 10px rgba(0,0,0,.2);
+
+}
+
+table{
+
+border-collapse:collapse;
+
+width:100%;
+
+margin-top:20px;
+
+}
+
+th,td{
+
+border:1px solid #ddd;
+
+padding:10px;
+
+}
+
+th{
+
+background:#222;
+
+color:white;
+
+}
+
+.pass{
+
+color:green;
+
+font-weight:bold;
+
+}
+
+.fail{
+
+color:red;
+
+font-weight:bold;
+
+}
+
+.grade{
+
+font-size:35px;
+
+font-weight:bold;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>HTTP Security Analyzer Report</h1>
+
+<hr>
+
+<h2>Scan Information</h2>
+
+<p><b>Target:</b> {{ url }}</p>
+
+<p><b>Date:</b> {{ date }}</p>
+
+<p><b>Status Code:</b> {{ status }}</p>
+
+<p><b>Server:</b> {{ server }}</p>
+
+<hr>
+
+
+<h2>Security Headers</h2>
+
+<table>
+
+<tr>
+
+<th>Header</th>
+
+<th>Status</th>
+
+<th>Purpose</th>
+
+<th>Risk</th>
+
+</tr>
+
+{% for header in headers %}
+
+<tr>
+
+<td>{{ header.header }}</td>
+
+<td>
+
+{% if header.status=="Present" %}
+
+<span class="pass">Present</span>
+
+{% else %}
+
+<span class="fail">Missing</span>
+
+{% endif %}
+
+</td>
+
+<td>{{ header.purpose }}</td>
+
+<td>{{ header.risk }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+<hr>
+
+<h2>Cookies</h2>
+
+<table>
+
+<tr>
+
+<th>Name</th>
+
+<th>Secure</th>
+
+<th>HttpOnly</th>
+
+<th>SameSite</th>
+
+</tr>
+
+{% for cookie in cookies %}
+
+<tr>
+
+<td>{{ cookie.name }}</td>
+
+<td>{{ cookie.secure }}</td>
+
+<td>{{ cookie.httponly }}</td>
+
+<td>{{ cookie.samesite }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+
+</html>
