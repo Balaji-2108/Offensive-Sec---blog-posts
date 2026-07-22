@@ -1,6 +1,6 @@
 # 🛡️ HTTP Security Analyzer
 
-A Python-based web security assessment tool that analyzes HTTP response headers, cookie security, and server information to identify common web security misconfigurations. The tool generates a security score along with a professional HTML report to help security professionals quickly assess the security posture of web applications.
+A Python-based web security assessment tool that analyzes HTTP response headers, cookie security, and server information to identify common web security misconfigurations. The tool generates a professional HTML report to help security professionals quickly assess the security posture of web applications.
 
 ---
 
